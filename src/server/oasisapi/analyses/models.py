@@ -242,7 +242,7 @@ class Analysis(TimeStampedModel):
 
         """
         complex_data_files = [{STORED_FILENAME: cmdf.file.file.name,
-                               ORIGINAL_FILENAME: cmdf.file_name}
+                               ORIGINAL_FILENAME: cmdf.filename}
                               for cmdf in self.complex_model_data_files.all()]
         return complex_data_files
 
